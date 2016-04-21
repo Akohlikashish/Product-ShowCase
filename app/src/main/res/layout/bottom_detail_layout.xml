@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="4dp"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/pager_item_label"
+        style="@style/text"
+        android:text="gym and spa" />
+
+    <TextView
+        android:id="@+id/old_price"
+        style="@style/text"
+        android:text="Rs 2000"
+        android:layout_below="@id/pager_item_label"
+        android:textColor="@color/grey"
+        android:background="@drawable/shape_line"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/current_price"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/old_price"
+        android:textColor="@color/black"
+        android:text="Rs 3000"
+        android:layout_marginTop="4dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/sym_action_call"
+        android:layout_alignBaseline="@id/old_price"
+        android:layout_alignParentRight="true"
+        android:id="@+id/call" />
+</RelativeLayout>

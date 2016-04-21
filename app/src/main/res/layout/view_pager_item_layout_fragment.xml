@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ashish.askme.uicomponent.AskMeCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/Card"
+    android:layout_margin="@dimen/default_gap"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/template2_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@color/grey" />
+
+        <include
+            layout="@layout/bottom_detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/template2_image" />
+    </RelativeLayout>
+
+</com.ashish.askme.uicomponent.AskMeCardView>
